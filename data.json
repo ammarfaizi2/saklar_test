@@ -1,18 +1,27 @@
 [
     {
+        "description": "Saklar teras",
         "ruang": "teras",
         "status": 1
     },
     {
+        "description": "Saklar ruang tamu abc",
         "ruang": "tamu",
         "status": 1
     },
     {
+        "description": "Saklar lampu ruang tengah",
         "ruang": "tengah",
         "status": 0
     },
     {
+        "description": "Saklar dapur",
         "ruang": "dapur",
+        "status": 1
+    },
+    {
+        "description": "Test abc 123",
+        "ruang": "asdasd",
         "status": 1
     }
 ]

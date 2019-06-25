@@ -16,19 +16,10 @@
 	<div class="container">
 		<div class="checkbox">
 			<?php	
-				$data_condition = file_get_contents('data.json');
-				$data_condition = json_decode($data_condition, true);
-				for ($i=0; $i < count($data_condition); $i++)
-				{
-					
-						$ruang = $data_condition[$i]['ruang'];
-						$status = (int)$data_condition[$i]['status'];
-						
-						if ($status == 1) { $on = 'checked';} else {$on = '';
-						}
-						echo '<div class="checkbox"><label><input '.$on.' data-toggle="toggle" type="checkbox" id="'.$ruang.'">Saklar Lampu '.$ruang.'</label></div><br>';
+				$data = json_decode(file_get_contents("data.json"), true);
+				foreach ($data as $v) {
+					echo '<div class="checkbox"><label><input '.($v["status"]?"checked":"").' data-toggle="toggle" type="checkbox" id="'.$v["ruang"].'">'.$v["description"].'</label></div><br>';	
 				}
-				
 			?>
 		</div>
 	</div>
