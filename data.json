@@ -1,0 +1,18 @@
+[
+    {
+        "ruang": "teras",
+        "status": 1
+    },
+    {
+        "ruang": "tamu",
+        "status": 1
+    },
+    {
+        "ruang": "tengah",
+        "status": 0
+    },
+    {
+        "ruang": "dapur",
+        "status": 1
+    }
+]
